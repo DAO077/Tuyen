@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Anniversary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Trực Đạo 💗 Kim Tuyến</h1>
+    <h2>27-12-2025</h2>
+    <h3>Happy Wedding</h3>
+    <p>I love u</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
