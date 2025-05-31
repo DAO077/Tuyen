@@ -2,16 +2,51 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Happy Anniversary</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Love Anniversary</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      overflow: hidden;
+      color: pink;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+    }
+    .text {
+      position: absolute;
+      white-space: nowrap;
+      animation: float 10s linear infinite;
+      font-size: 20px;
+    }
+    @keyframes float {
+      0% { transform: translateX(100vw); }
+      100% { transform: translateX(-100vw); }
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Trực Đạo 💗 Kim Tuyến</h1>
-    <h2>27-12-2025</h2>
-    <h3>Happy Wedding</h3>
-    <p>I love u</p>
-  </div>
-  <script src="script.js"></script>
+  <script>
+    const texts = [
+      "Trực Đạo 💗 Kim Tuyến",
+      "27-12-2025",
+      "Happy Wedding",
+      "I love u",
+      "Luôn luôn bên nhau",
+    ];
+
+    function createText() {
+      const text = document.createElement("div");
+      text.className = "text";
+      text.style.top = Math.random() * window.innerHeight + "px";
+      text.textContent = texts[Math.floor(Math.random() * texts.length)];
+      document.body.appendChild(text);
+
+      setTimeout(() => text.remove(), 10000);
+    }
+
+    setInterval(createText, 300);
+  </script>
 </body>
 </html>
+
